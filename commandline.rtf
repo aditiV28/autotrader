@@ -1,0 +1,274 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang16393{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.15063}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Microsoft Windows [Version 10.0.15063]\par
+(c) 2017 Microsoft Corporation. All rights reserved.\par
+\par
+C:\\Users\\ADMIN>cd ..\par
+\par
+C:\\Users>cd ..\par
+\par
+C:\\>cd xampp/htdocs\par
+\par
+C:\\xampp\\htdocs>cd autotrader\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console server:run\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+\par
+ [OK] Server listening on {{\field{\*\fldinst{HYPERLINK http://127.0.0.1:8000 }}{\fldrslt{http://127.0.0.1:8000\ul0\cf0}}}}\f0\fs22\par
+\par
+ // Quit the server with CONTROL-C.\par
+\par
+^C\par
+C:\\xampp\\htdocs\\autotrader>bin/console doctrine:database:create\par
+'bin' is not recognized as an internal or external command,\par
+operable program or batch file.\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:database:create\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+\par
+\par
+  [Doctrine\\DBAL\\Exception\\ConnectionException]\par
+  An exception occured in driver: SQLSTATE[HY000] [2002] No connection could be made because the target machine activ\par
+  ely refused it.\par
+\par
+\par
+\par
+  [Doctrine\\DBAL\\Driver\\PDOException]\par
+  SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.\par
+\par
+\par
+\par
+  [PDOException]\par
+  SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.\par
+\par
+\par
+doctrine:database:create [--shard SHARD] [--connection [CONNECTION]] [--if-not-exists] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>\par
+\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:database:create\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+Could not create database `autotrader` for connection named default\par
+An exception occurred while executing 'CREATE DATABASE `autotrader`':\par
+\par
+SQLSTATE[HY000]: General error: 1007 Can't create database 'autotrader'; database exists\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:generate:entity\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+\par
+\par
+  Welcome to the Doctrine2 entity generator\par
+\par
+\par
+\par
+This command helps you generate Doctrine2 entities.\par
+\par
+First, you need to give the entity name you want to generate.\par
+You must use the shortcut notation like AcmeBlogBundle:Post.\par
+\par
+The Entity shortcut name: CarBundle:Car\par
+\par
+Determine the format to use for the mapping information.\par
+\par
+Configuration format (yml, xml, php, or annotation) [annotation]:\par
+\par
+Instead of starting with a blank entity, you can add some fields now.\par
+Note that the primary key will be added automatically (named id).\par
+\par
+Available types: array, simple_array, json_array, object,\par
+boolean, integer, smallint, bigint, string, text, datetime, datetimetz,\par
+date, time, decimal, float, binary, blob, guid.\par
+\par
+New field name (press <return> to stop adding fields): name\par
+Field type [string]:\par
+Field length [255]:\par
+Is nullable [false]:\par
+Unique [false]:\par
+\par
+New field name (press <return> to stop adding fields): make\par
+Field type [string]:\par
+Field length [255]:\par
+Is nullable [false]:\par
+Unique [false]:\par
+\par
+New field name (press <return> to stop adding fields):\par
+\par
+\par
+  Entity generation\par
+\par
+\par
+  created .\\src\\CarBundle/Entity/\par
+  created .\\src\\CarBundle/Entity/Car.php\par
+> Generating entity class C:\\xampp\\htdocs\\autotrader\\src\\CarBundle\\Entity\\Car.php: OK!\par
+> Generating repository class C:\\xampp\\htdocs\\autotrader\\src\\CarBundle\\Repository\\CarRepository.php: OK!\par
+\par
+\par
+  Everything is OK! Now get to work :).\par
+\par
+\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:schema:update\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+ATTENTION: This operation should not be executed in a production environment.\par
+           Use the incremental update to detect changes during development and use\par
+           the SQL DDL provided to manually update your database in production.\par
+\par
+The Schema-Tool would execute "1" queries to update the database.\par
+Please run the operation by passing one - or both - of the following options:\par
+    doctrine:schema:update --force to execute the command\par
+    doctrine:schema:update --dump-sql to dump the SQL statements to the screen\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:schema:update --force\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+Updating database schema...\par
+Database schema updated successfully! "1" query was executed\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console server:run\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+\par
+ [OK] Server listening on {{\field{\*\fldinst{HYPERLINK http://127.0.0.1:8000 }}{\fldrslt{http://127.0.0.1:8000\ul0\cf0}}}}\f0\fs22\par
+\par
+ // Quit the server with CONTROL-C.\par
+\par
+^C\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:schema:update --force\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+\par
+\par
+  [Doctrine\\Common\\Annotations\\AnnotationException]\par
+  [Semantical Error] The annotation "@Doctrine\\ORM\\Mapping" in property CarBundle\\Entity\\C\par
+  ar::$description does not exist, or could not be auto-loaded.\par
+\par
+\par
+doctrine:schema:update [--complete] [--dump-sql] [-f|--force] [--em [EM]] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>\par
+\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:schema:update --force\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+\par
+\par
+  [Doctrine\\Common\\Annotations\\AnnotationException]\par
+  [Creation Error] The annotation @ORM\\Column declared on property CarBundle\\Entity\\Car::$\par
+  description does not have a property named "nullble". Available properties: name, type,\par
+  length, precision, scale, unique, nullable, options, columnDefinition\par
+\par
+\par
+doctrine:schema:update [--complete] [--dump-sql] [-f|--force] [--em [EM]] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>\par
+\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:schema:update --force\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+\par
+\par
+  [Doctrine\\Common\\Annotations\\AnnotationException]\par
+  [Creation Error] The annotation @ORM\\Column declared on property CarBundle\\Entity\\Car::$\par
+  description does not have a property named "nullble". Available properties: name, type,\par
+  length, precision, scale, unique, nullable, options, columnDefinition\par
+\par
+\par
+doctrine:schema:update [--complete] [--dump-sql] [-f|--force] [--em [EM]] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>\par
+\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:schema:update --force\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+Updating database schema...\par
+Database schema updated successfully! "1" query was executed\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console server:run\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+\par
+ [OK] Server listening on {{\field{\*\fldinst{HYPERLINK http://127.0.0.1:8000 }}{\fldrslt{http://127.0.0.1:8000\ul0\cf0}}}}\f0\fs22\par
+\par
+ // Quit the server with CONTROL-C.\par
+\par
+^C\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:generate:entities CarBundle\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+Generating entities for bundle "CarBundle"\par
+\par
+\par
+  [Doctrine\\Common\\Annotations\\AnnotationException]\par
+  [Semantical Error] The annotation "@Doctrine\\ORM\\Mapping\\Colums" in property CarBundle\\E\par
+  ntity\\Car::$year does not exist, or could not be auto-loaded.\par
+\par
+\par
+doctrine:generate:entities [--path PATH] [--no-backup] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command> <name>\par
+\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:generate:entities CarBundle\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+Generating entities for bundle "CarBundle"\par
+\par
+\par
+  [Doctrine\\Common\\Annotations\\AnnotationException]\par
+  [Semantical Error] The annotation "@Doctrine\\ORM\\Mapping\\Colums" in property CarBundle\\E\par
+  ntity\\Car::$year does not exist, or could not be auto-loaded.\par
+\par
+\par
+doctrine:generate:entities [--path PATH] [--no-backup] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command> <name>\par
+\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:generate:entities CarBundle\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+Generating entities for bundle "CarBundle"\par
+  > backing up Car.php to Car.php~\par
+  > generating CarBundle\\Entity\\Car\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:generate:entities CarBundle\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+Generating entities for bundle "CarBundle"\par
+  > backing up Car.php to Car.php~\par
+  > generating CarBundle\\Entity\\Car\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console doctrine:schema:update --force\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+Updating database schema...\par
+Database schema updated successfully! "1" query was executed\par
+\par
+C:\\xampp\\htdocs\\autotrader>php bin/console server:run\par
+PHP Warning:  Module 'openssl' already loaded in Unknown on line 0\par
+\par
+Warning: Module 'openssl' already loaded in Unknown on line 0\par
+\par
+ [OK] Server listening on {{\field{\*\fldinst{HYPERLINK http://127.0.0.1:8000 }}{\fldrslt{http://127.0.0.1:8000\ul0\cf0}}}}\f0\fs22\par
+\par
+ // Quit the server with CONTROL-C.\par
+\par
+^C\par
+C:\\xampp\\htdocs\\autotrader>\par
+}
+ 
